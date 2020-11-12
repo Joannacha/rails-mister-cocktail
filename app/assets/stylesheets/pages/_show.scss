@@ -1,0 +1,52 @@
+.container-img {
+  img {
+    height: 100vh;
+    width: 100vh;
+    object-fit: cover;
+    }
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 70px;
+  margin-bottom: 30px;
+}
+
+h4, h5 {
+  font-family: 'Open Sans';
+  font-weight: 900;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.555);
+  margin-bottom: 20px;
+}
+
+h5 {
+  font-family: 'Open Sans';
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.list-unstyled {
+  border-left: 3px solid #c97878 !important;
+  font-size: 18px;
+}
+
+.far {
+  color: rgba(0, 0, 0, 0.397);
+  opacity: .7;
+
+  &:hover {
+    color: black;
+  }
+}
+
+form {
+  padding: 30px;
+}
+
+.form-control, .select2-selection--single {
+  background-color: transparent !important;
+  border: 1px solid #c97878 !important;
+  border-radius: 2px !important;
+}
