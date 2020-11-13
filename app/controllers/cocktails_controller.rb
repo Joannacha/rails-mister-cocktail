@@ -1,8 +1,7 @@
 class CocktailsController < ApplicationController
 
   def index
-    @first_cocktail = Cocktail.first
-    @cocktails = Cocktail.all[1..-1]
+    @cocktails = Cocktail.all
   end
 
   def show

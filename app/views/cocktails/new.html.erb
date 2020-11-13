@@ -1,14 +1,22 @@
-<div class="form-container d-flex">
-  <div class="form-infos">
-    <h3>Add your cocktail</h3>
-    <%= simple_form_for(@cocktail) do |f| %>
-      <%= f.input :name, :required => false %>
-      <%= f.input :photo, as: :file, input_html: { class: 'mb-3' } %>
-      <hr>
-      <%= f.submit "Add cocktail", class: 'btn btn-light mt-3' %>
-    <% end %>
+<div>
+  <div class="row">
+    <div class="home">
+      <%= link_to cocktails_path, class: "btn home-btn" do %>
+        <i class="fas fa-angle-left"> HOME</i>
+      <% end %>
+    </div> 
   </div>
-  <div class="form-image">
+  <div class="form-container d-flex">
+    <div class="form-infos">
+      <h3>Add your cocktail</h3>
+      <%= simple_form_for(@cocktail) do |f| %>
+        <%= f.input :name, :required => false %>
+        <%= f.input :photo, input_html: { class: 'd-none' }, label_html: { class: 'btn btn-light'}, label: 'Upload a photo' %>
+        <hr>
+        <%= f.submit "Add cocktail", class: 'btn btn-light mt-3' %>
+      <% end %>
+    </div>
+    <div class="form-image">
+    </div>
   </div>
-  <i class="fas fa-home-alt" id="home-icon"></i>
 </div>

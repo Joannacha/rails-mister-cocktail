@@ -14,7 +14,7 @@
 
 .btn-banner {
   color: #fff;
-  background: darken(#d0868c, 1.5%);
+  background-color: rgba(208, 134, 140, 0.8);
   font-size:20px;
   font-weight: 100;
   line-height: 45px;
@@ -58,3 +58,36 @@
     }
   }
 }
+
+.home-btn {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 2px;
+
+    i {
+    padding: 5px 40px;
+    font-size: 20px;
+    // font-family: 'Open Sans';
+    font-weight: 700;
+    color:rgba(0, 0, 0, 0.479);
+
+    &:hover {
+      color: black;
+      transition-duration: 0.6s;
+    }
+  }
+}
+
+#sticky { 
+  position: absolute;
+  top: 65px;
+  left: 0;  
+}
+
+// .upload-photo {
+//   border: 1px solid #d3d3d3;
+//   padding: 16px 24px;
+//   cursor: pointer;
+//   font-weight: 500;
+//   background: white;
+//   border-radius: 2px;
+// }
