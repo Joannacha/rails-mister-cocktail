@@ -1,23 +1,45 @@
 <div class="banner">
-  <div class="container">
-    <h1>Cocktails at<strong> home </strong> for <strong>lockdown</strong>!</h1>
-    <p>Find some cocktails to get wasted during theses hard times.</p>
-    <a class="btn btn-light" href="/cocktails/new">Add a cocktail</a>
+  <div class="banner-container">
+    <h1>Cocktails at home for lockdown!</h1>
+    <p>Find a cocktail to forget about theses hard times and add your own.</p>
+    <a class="btn-banner" href="/cocktails/new">
+        <svg>
+          <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+        </svg>
+      Add your cocktail
+    </a>
   </div>
 </div>
 
 <div class="container py-3">
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
+      <div class="carousel-item active d-flex">
+        <div class="card">
+          <div class="card-image">
+            <% if @first_cocktail.photo.attached? %>
+              <%= cl_image_tag @first_cocktail.photo.key, height: 300, width: 400, crop: :fill %>
+            <% else %>
+                <img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80" class="d-block w-100">
+            <% end %>
+          </div>
+          <div class="card-info mb-3 p-3">
+            <h3><%= link_to @first_cocktail.name, cocktail_path(@first_cocktail) %></h3>
+          </div>
+        </div>
+      </div>    
       <% @cocktails.each do |cocktail| %>
-        <div class="carousel-item active">
-          <div class="card mb-3">
+        <div class="carousel-item d-flex">
+          <div class="card">
             <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80" class="d-block w-100">
+              <% if cocktail.photo.attached? %>
+                <%= cl_image_tag cocktail.photo.key, height: 300, width: 400, crop: :fill %>
+              <% else %>
+                <img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80" class="d-block w-100">
+              <% end %>
             </div>
             <div class="card-info mb-3 p-3">
               <h3><%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
-              <p>Product description with <strong>relevant info</strong> only.</p>
             </div>
           </div>
         </div>

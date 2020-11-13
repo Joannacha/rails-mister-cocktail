@@ -23,8 +23,28 @@ h3 {
   background-position: center;
 }
 
+#home-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color:  black;
+  font-size: 30px;
+}
+
 .simple_form {
   padding: 0;
 }
+
+// #file-upload-button {
+//   color: rgba(0, 0, 0, 0.397);
+//   opacity: .7 ;
+//   color:  #d0868c ;
+//   border: 1px solid #d0868c ;
+//   border-radius: 2px ;
+
+//   &:hover {
+//     opacity: 1 ;
+//   }
+// }
 
 

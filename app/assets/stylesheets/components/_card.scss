@@ -6,12 +6,17 @@
 //   display: flex;
 //   align-items: center;
 // }
-
-.card img {
-  height: 100%;
-  width: 120px;
-  object-fit: cover;
+.card {
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
+
+// .card img {
+//   height: 100%;
+//   width: 120px;
+//   object-fit: cover;
+// }
 
 .card h3 {
   font-weight: 500;
@@ -33,3 +38,10 @@
   margin-bottom: 0;
   margin-top: 8px;
 }
+
+// .card-image {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   min-height: 300px;
+// }

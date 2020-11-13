@@ -2,10 +2,59 @@
   color: rgba(0, 0, 0, 0.397)!important;
   opacity: .7 !important;
   color:  #d0868c !important;
-  border: 1px solid #d0868c !important;
+  border: 1px solid rgb(208, 134, 140) !important;
   border-radius: 2px !important;
 
   &:hover {
     opacity: 1 !important;
+    background-color: white !important;
+    transition-duration: 10s;
+  }
+}
+
+.btn-banner {
+  color: #fff;
+  background: darken(#d0868c, 1.5%);
+  font-size:20px;
+  font-weight: 100;
+  line-height: 45px;
+  margin: 0 0 2em;
+  max-width: 160px; 
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%; 
+  padding: 9px 12px;
+  
+  svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0; 
+    width: 100%; 
+  }
+  
+  rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+  }
+
+  &:hover {
+    background: rgba(#d0868c, 0);
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition-duration: 1s;
+    
+    rect {
+      stroke-width: 5;
+      stroke-dasharray: 15, 310;
+      stroke-dashoffset: 48;
+      transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    }
   }
 }
