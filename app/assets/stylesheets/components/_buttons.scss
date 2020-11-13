@@ -1,4 +1,11 @@
 .btn-light {
   color: rgba(0, 0, 0, 0.397)!important;
   opacity: .7 !important;
+  color:  #d0868c !important;
+  border: 1px solid #d0868c !important;
+  border-radius: 2px !important;
+
+  &:hover {
+    opacity: 1 !important;
+  }
 }

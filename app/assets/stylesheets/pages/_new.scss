@@ -1,0 +1,30 @@
+.form-container {
+  width: 600px;
+  margin: 100px auto;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.form-infos {
+  padding: 50px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 25px;
+  margin: 0 0 20px 0;
+}
+
+.form-image {
+  width: 50%;
+  background-image: linear-gradient(rgba(0,0,0,0.05),rgba(0,0,0,0.05)), url('add-cocktail.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.simple_form {
+  padding: 0;
+}
+
+

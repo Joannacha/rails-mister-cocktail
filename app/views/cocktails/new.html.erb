@@ -1,6 +1,13 @@
-<h2>Add your cocktail</h2>
-<%= simple_form_for(@cocktail) do |f| %>
-  <%= f.input :name %>
-  <%= f.input :picture_url %>
-  <%= f.submit %>
-<% end %>
+<div class="form-container d-flex">
+  <div class="form-infos">
+    <h3>Add your cocktail</h3>
+    <%= simple_form_for(@cocktail) do |f| %>
+      <%= f.input :name %>
+      <%= f.input :photo, as: :file, input_html: { class: 'btn btn-light mb-3' } %>
+      <hr>
+      <%= f.submit "Add cocktail", class: 'btn btn-light mt-3' %>
+    <% end %>
+  </div>
+  <div class="form-image">
+  </div>
+</div>
